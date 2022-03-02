@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>SASS</title>
+       <link rel="stylesheet" href="mysass.css">
+</head>
+<body>
+    <div align="center">
+        <h1>This is Sass Scenario</h1>
+        <br>
+        <div id="mydiv">
+           <p id="one">This is My Box</p>
+           <br>
+           <p id="two">This is Second Paragraph</p>
+           <br>
+           <h1 id="three">This is Heading</h1>
+           <div id="secondiv">
+               <h1 id="four">Hello</h1>
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+ 
+
+//SCSS
+ 
+
+$mycolor : red;
+$myscolor : green;
+$mytextsixe : 35px;
+#mydiv{
+    padding: $mytextsixe;
+    margin: 30px;
+    border-radius: 30px - 10px;
+    background-color:$myscolor;
+    text-align: center;
+    #one{
+        font-size: $mytextsixe;
+    }
+    #two{
+        font-size: 50px;
+    }
+    #three{
+        color: rebeccapurple;
+    }
+    #secondiv{
+        background-color: rosybrown;
+        width: 200px;
+        border-radius: 20px;  
+        #four{
+            color: seashell;
+        }
+    }
+} 
